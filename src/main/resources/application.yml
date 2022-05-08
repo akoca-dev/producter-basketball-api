@@ -1,0 +1,9 @@
+spring:
+  profiles:
+    active: dev
+graphql:
+  servlet:
+    mapping: /api/graphql
+server:
+  servlet:
+    context-path: /basketballapi

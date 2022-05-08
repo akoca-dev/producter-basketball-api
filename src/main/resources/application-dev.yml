@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: basketballapi
+  datasource:
+    url: jdbc:h2:mem:basketballapi
+    username: sa
+    password: password
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: update
+  h2:
+    console:
+      enabled: true
+graphql:
+  servlet:
+    mapping: /api/graphql
+server:
+  port: 8888
